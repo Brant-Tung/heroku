@@ -1,0 +1,33 @@
+{
+  "name": "heroku",
+  "scripts": {
+  },
+  "env": {
+    "HEROKU_POSTGRESQL_AQUA_URL": {
+      "required": true
+    },
+    "JAVA_OPTS": {
+      "required": true
+    },
+    "JAVA_TOOL_OPTIONS": {
+      "required": true
+    },
+    "MAVEN_OPTS": {
+      "required": true
+    },
+    "PATH": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+
+  ]
+}
